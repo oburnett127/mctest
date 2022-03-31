@@ -18,4 +18,4 @@ CREATE TRIGGER update_customer_modtime BEFORE UPDATE ON account FOR EACH ROW EXE
 
 commit;
 end transaction;
-/* */
+/* Hello world */

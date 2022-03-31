@@ -35,4 +35,4 @@ public class Writing {
 	@ManyToOne(optional=false)
 	private Account account;
 }
-//
+////Hello world

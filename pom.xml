@@ -9,13 +9,14 @@
     <description>A website for discussing stocks</description>
     <properties>
         <java.version>11</java.version>
-        <org.springframework-version>5.3.17</org.springframework-version>
+        <org.springframework.version>5.3.17</org.springframework.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <junit.version>5.8.2</junit.version>
         <spring.version>2.6.4</spring.version>
         <jfixture.version>2.7.2</jfixture.version>
+        <springsecurity.version>5.6.2</springsecurity.version>
     </properties>
     <dependencies>
         <dependency>
@@ -92,18 +93,18 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${org.springframework-version}</version>
+            <version>${org.springframework.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>${org.springframework-version}</version>
+            <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>${org.springframework-version}</version>
+            <version>${org.springframework.version}</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>
@@ -136,8 +137,19 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>${springsecurity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>${springsecurity.version}</version>
+        </dependency>
     </dependencies>
     <build>
+        <finalName>marketboard</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -175,11 +187,16 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <skipIfEmpty>true</skipIfEmpty>
-                </configuration>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.3</version>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-jar-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    <skipIfEmpty>true</skipIfEmpty>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -196,3 +213,4 @@
         </plugins>
     </build>
 </project>
+<!-- Hello world -->

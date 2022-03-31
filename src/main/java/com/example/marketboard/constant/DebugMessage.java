@@ -10,4 +10,4 @@ public interface DebugMessage {
     String MSG6 = "DEBUGMSG6: withdraw amount {} from account {}, balance is now at {}";
     String MSG7 = "DEBUGMSG7: Transfer successful. Sending account id {}, receiving account id {}";
 }
-//
+//Hello world

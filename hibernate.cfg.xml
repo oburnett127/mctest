@@ -14,4 +14,4 @@
 		<property name="current_session_context_class">thread</property>
     </session-factory>
 </hibernate-configuration>
-<!-- -->
+<!-- hello world -->

@@ -13,4 +13,4 @@ public class Stock {
 	@ManyToOne(optional=false)
 	private Writing writing;
 }
-//
+////Hello world

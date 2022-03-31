@@ -4,11 +4,6 @@ import com.example.marketboard.model.Account;
 import com.example.marketboard.model.AccountRequest;
 import com.example.marketboard.model.CreateAccountRequest;
 import com.example.marketboard.service.AccountService;
-import com.example.marketboard.constant.DebugMessage;
-import com.example.marketboard.model.Account;
-import com.example.marketboard.model.AccountRequest;
-import com.example.marketboard.model.CreateAccountRequest;
-import com.example.marketboard.service.AccountService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -58,3 +53,4 @@ public class AccountController {
         return ResponseEntity.ok().body(result);
     }
 }
+//Hello world

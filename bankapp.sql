@@ -82,4 +82,4 @@ INSERT INTO public.account (id, full_name, balance, created_at, updated_at) VALU
 INSERT INTO public.account (id, full_name, balance, created_at, updated_at) VALUES (DEFAULT, 'maxwell', 1, DEFAULT, DEFAULT)
 INSERT INTO public.account (id, full_name, balance, created_at, updated_at) VALUES (DEFAULT, 'ana', 1232322, DEFAULT, DEFAULT)
 
-/* */
+/* hello world*/

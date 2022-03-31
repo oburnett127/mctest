@@ -23,4 +23,4 @@ import javax.persistence.Id;
 @DiscriminatorValue("1")
 public class Post extends Writing {
 }
-//
+////Hello world
